@@ -18,7 +18,6 @@ int main()
 
     map<int,int>::iterator  itr;
     for(itr= map1.begin(); itr!=map1.end(); ++itr)
-
     {
         cout<<"Key = "<<itr->first<<"  "<<"Value = "<<itr->second<<endl;
     }

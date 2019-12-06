@@ -1,0 +1,26 @@
+#include<iostream.h>
+class Box
+{
+double width;
+public:
+friend void printwidth(Box box);
+void setwidth(double wid );
+};
+void Box::setwidth(double wid)
+{
+width=wid;
+}
+void printwidth(Box box)
+{
+cout<<"RESULT=>"<<"width of box"<<box.width<<endl<<"\n";
+ }
+void main()
+{
+Box box;
+box.setwidth(5.3);
+printwidth(box);
+cout<<"NAME=JAGDEESH KUSHWAHA"<<"\n";
+cout<<"\n"<<"ROLL No. 15025C04026";
+}
+
+
