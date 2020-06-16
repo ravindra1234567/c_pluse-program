@@ -9,8 +9,12 @@ int  main(){
             scanf("%d",&arr[i]);
         // printf("Enter Pisition = ");
         // scanf("%d",&pos);
-        printf("\n Enter value = ");
-        scanf("%d",&val);
+
+
+        // printf("\n Enter value = ");
+        // scanf("%d",&val);
+
+
         // Insert element in any possotion
         // for (i = size1-1; i >=pos-1 ; i--)
         // {
@@ -19,21 +23,41 @@ int  main(){
         //     arr[i+1] = val;
         //     size1++; 
 
+
+
         // Insert element at last
         // arr[size1] = val;
         // size1++;
 
 
         // Insert element at starting
-        for ( i = size1-1; i >= 0; i--)
-        {
-            arr[i+1] = arr[i];
-        }
-        arr[i+1] = val;
-        size1++;
+        // for ( i = size1-1; i >= 0; i--)
+        // {
+        //     arr[i+1] = arr[i];
+        // }
+        // arr[i+1] = val;
+        // size1++;
+
+        // Delete element in starting in array
+        // for(int i=0;i<size1;i++)
+        //     arr[i] = arr[i+1];
+        // size1--;
+
+        // Delete element in array in given location
+        // printf("Enter the location ");
+        // scanf("%d",&pos);
+        // for(int i=0;i<size1;i++){
+        //     if(i >= pos-1)
+        //         arr[i] = arr[i+1];
+            
+        // }
+        // Delete element at last 
+        arr[size1]=0;
+        size1--;
         for(i=0;i<size1;i++)
             printf("%d \t",arr[i]);
         printf("\n");
+        printf("%d \t",size1);
     }else
         printf("Array index of bound");
     return 0;
